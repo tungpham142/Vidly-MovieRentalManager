@@ -1,14 +1,14 @@
 ﻿@{
-    ViewBag.Title = "Movies";
+    ViewBag.Title = "Customers";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Movies</h2>
-<table id="movies" class="table table-bordered table-hover">
+<h2>Customers</h2>
+<table id="customers" class="table table-bordered table-hover">
     <thead>
         <tr>
-            <th>Movies</th>
-            <th>Genre</th>
+            <th>Customer</th>
+            <th>Membership Type</th>
         </tr>
     </thead>
     <tbody></tbody>
@@ -16,18 +16,19 @@
 @section scripts
 {
     <script>
-        $(document).ready(function() {
-            $("#movies").DataTable({
+        $(document).ready(function () {
+            $("#customers").DataTable({
                 ajax: {
-                    url: "/api/movies",
+                    url: "/api/customers",
                     dataSrc: ""
                 },
                 columns: [
                     {
-                        data: "name"                        
+                        data: "name"
+                        
                     },
                     {
-                        data: "genre.name"
+                        data: "membershipType.name"
                     }
                 ]
             });
