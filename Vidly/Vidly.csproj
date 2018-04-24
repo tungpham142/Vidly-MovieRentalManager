@@ -261,6 +261,10 @@
     <Compile Include="Migrations\201804221757311_AddDataAnotationToMovie.Designer.cs">
       <DependentUpon>201804221757311_AddDataAnotationToMovie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804240600042_SeedUsers.cs" />
+    <Compile Include="Migrations\201804240600042_SeedUsers.Designer.cs">
+      <DependentUpon>201804240600042_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -511,10 +515,11 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\MovieList.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyMoviesList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -565,6 +570,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804221757311_AddDataAnotationToMovie.resx">
       <DependentUpon>201804221757311_AddDataAnotationToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804240600042_SeedUsers.resx">
+      <DependentUpon>201804240600042_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
