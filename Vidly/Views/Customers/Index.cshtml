@@ -52,7 +52,7 @@
                         function (result) {
                             if (result) {
                                 $.ajax({
-                                    url: "/api/customers/" + button.attr("data-customer-id"),
+                                    url: "/api/movies/" + button.attr("data-movie-id"),
                                     method: "DELETE",
                                     success: function () {
                                         table.row(button.parents("tr")).remove().draw();
